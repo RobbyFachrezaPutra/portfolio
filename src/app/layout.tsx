@@ -4,7 +4,6 @@ import "./globals.css";
 
 import Navbar from "@/components/navbar";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,7 +13,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#182541]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-tr from-slate-600 to-slate-800`}
       >
         <Navbar />
         {children}

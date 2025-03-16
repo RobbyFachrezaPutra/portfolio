@@ -1,23 +1,44 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-16 text-center gap-8"
-    >
-      <div className="md:w-1/2">
-        <h1 className="text-center md:text-start text-3xl sm:text-3xl lg:text-5xl font-bold text-[#fffdf6] tracking-tight">
-         Hey, I'm <br />Robby Fachreza Putra
-        </h1>
-        <p className="text-center md:text-start text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#fffdf6] mt-2">
-          Full Stack Web Developer
-        </p>
-        <p className="text-center md:text-start text-base sm:text-lg lg:text-xl text-[#aba8a8] mt-4">
-          Learning, Coding, and Creating Digital Experiences
-        </p>
-      </div>
+    <section id="home" className="py-24 lg:py-36">
+      <div className="container flex justify-center items-center">
+        <div className="flex flex-wrap">
+          <div className="w-full self-center px-4 lg:w-1/2">
+            <h1 className="text-base font-semibold text-stone-50 mb-1 md:text-xl">
+              Hey, I'm{" "}
+              <span className="block font-bold text-3xl mt-1 lg:text-5xl">
+                Robby F. Putra
+              </span>
+            </h1>
+            <p className="font-medium text-lg text-stone-50 mb-5 lg:text-2xl ">
+              Full Stack Web Developer
+            </p>
+            <p className="font-medium text-base text-zinc-300 mb-5">
+              Learning, Coding, and Creating Digital Experiences
+            </p>
 
-      <div className="md:w-1/2 flex justify-center">
-      <button className="text-white text-xl sm:text-2xl md:text-3 xl">Hire Me</button></div>
+            <a href="#contact">
+              <button className="px-4 py-2 sm:px-6 sm:py-3 text-cyan-900 text-sm sm:text-base border bg-cyan-400 rounded-xl hover:text-cyan-400 hover:bg-cyan-900 transform transition-all duration-300 ease-in-out hover:scale-105 sm:hover:scale-110 mt-5">
+                Hire Me
+              </button>
+            </a>
+          </div>
+
+          <div className="w-full self-end px-4 lg:w-1/2">
+            <div className="relative mt-10 lg:mt-9 lg:right-0">
+              <Image
+                src="/asset/Porto-picture.png"
+                alt="Robby Fachreza Putra"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
