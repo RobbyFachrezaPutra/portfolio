@@ -45,7 +45,7 @@ export default function Contact() {
                   <Field
                     type="text"
                     name="name"
-                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                    className="w-full p-2 border border-gray-300 text-black rounded mt-1"
                   />
                   <ErrorMessage
                     name="name"
@@ -61,7 +61,7 @@ export default function Contact() {
                   <Field
                     type="email"
                     name="email"
-                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                    className="w-full p-2 border border-gray-300 text-black rounded mt-1"
                   />
                   <ErrorMessage
                     name="email"
@@ -77,7 +77,7 @@ export default function Contact() {
                   <Field
                     as="textarea"
                     name="message"
-                    className="w-full p-2 border border-gray-300 rounded mt-1"
+                    className="w-full p-2 border border-gray-300 text-black rounded mt-1"
                     rows="4"
                   />
                   <ErrorMessage

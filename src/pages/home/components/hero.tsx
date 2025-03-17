@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:mt-9 lg:right-0">
               <Image
-                src="/asset/Porto-picture.png"
+                src="/asset/Hero-picture.png"
                 alt="Robby Fachreza Putra"
                 width={500}
                 height={500}

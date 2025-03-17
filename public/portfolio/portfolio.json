@@ -4,15 +4,15 @@
             "id": 1,
             "title": "Practice 1",
             "description":"Latihan membuat kartu pada sebuah website",
-            "image": "/portfolio-images/project-1.png",
-            "link": ""          
+            "image": "/portfolio-images/project-1.png",      
+            "tools": "HTML, Tailwind CSS"
         },
         {
             "id": 2,
             "title": "Practice 2",
             "description":"Latihan membuat kartu pada sebuah website",
             "image": "/portfolio-images/project-2.png",
-            "link": ""          
+            "tools": "HTML, Tailwind CSS"         
         }
     ]
 }

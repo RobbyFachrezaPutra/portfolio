@@ -9,6 +9,7 @@ interface IProject {
   title: string;
   description: string;
   image: string;
+  tools: string;
 }
 
 export default function Portfolio() {
@@ -61,10 +62,14 @@ export default function Portfolio() {
                     className="h-full object-cover rounded-md"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 px-4 pb-2">
+                <h3 className="text-lg font-semibold text-black px-4 pb-2">
                   {item?.title || "No title"}
                 </h3>
-                <p className="px-4">{item?.description}</p>
+                <p className="px-4 pb-8 text-gray-800">{item.description}</p>
+                <h4 className="text-base font-semibold text-black px-4 pb-2">
+                  Tools :
+                </h4>
+                <p className="px-4 pb-2 text-gray-800">{item.tools}</p>
               </div>
             </motion.div>
           ))}
