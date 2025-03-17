@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 interface IProject {
   id: number;
@@ -44,7 +45,14 @@ export default function Portfolio() {
 
         <div className="w-full px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {project.map((item, index) => (
-            <div key={index} className=" p-4">
+            <motion.div
+              key={index}
+              className=" p-4"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div className="w-full h-[500px] bg-stone-50 rounded-lg shadow-lg overflow-hidden pb-4">
                 <div className="relative h-80 overflow-hidden rounded-t-lg flex justify-center items-center py-8 px-4">
                   <img
@@ -58,7 +66,7 @@ export default function Portfolio() {
                 </h3>
                 <p className="px-4">{item?.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

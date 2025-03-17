@@ -1,5 +1,6 @@
 "use client";
 
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -20,12 +21,12 @@ export default function Contact() {
           <h2 className="text-lg md:text-xl lg:text-xl font-bold text-stone-50 pb-8">
             CONTACT
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl justify-center text-zinc-300 pb-4">
+          <p className="text-base sm:text-lg lg:text-xl justify-center text-zinc-300 pb-8">
             Silakan isi form di bawah ini untuk menghubungi saya.
           </p>
         </div>
 
-        <div className="bg-white p-6 shadow-md rounded-lg max-w-lg mx-auto">
+        <div className="bg-gray-100 p-6 shadow-xl rounded-lg max-w-lg mx-auto mb-10">
           <Formik
             initialValues={{ name: "", email: "", message: "" }}
             validationSchema={ContactSchema}
@@ -38,7 +39,9 @@ export default function Contact() {
             {({ handleSubmit }) => (
               <Form onSubmit={handleSubmit}>
                 <div className="mb-4">
-                  <label className="block font-semibold">Nama:</label>
+                  <label className="block font-semibold text-black">
+                    Nama:
+                  </label>
                   <Field
                     type="text"
                     name="name"
@@ -52,7 +55,9 @@ export default function Contact() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block font-semibold">Email:</label>
+                  <label className="block font-semibold text-black">
+                    Email:
+                  </label>
                   <Field
                     type="email"
                     name="email"
@@ -66,7 +71,9 @@ export default function Contact() {
                 </div>
 
                 <div className="mb-4">
-                  <label className="block font-semibold">Pesan:</label>
+                  <label className="block font-semibold text-black">
+                    Pesan:
+                  </label>
                   <Field
                     as="textarea"
                     name="message"
@@ -80,15 +87,48 @@ export default function Contact() {
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
-                >
-                  Kirim
-                </button>
+                <div className="flex justify-center items-center">
+                  <button
+                    type="submit"
+                    className="w-32 md:w-44 bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+                  >
+                    Kirim
+                  </button>
+                </div>
               </Form>
             )}
           </Formik>
+        </div>
+        <p className="text-base sm:text-lg lg:text-xl justify-center text-zinc-300 pb-4">
+          Atau hubungi saya melalui platform berikut:
+        </p>
+        <div className="flex border-b-2 border-b-slate-50 pb-2 rounded-lg w-40 gap-4 justify-center items-center mt-6 mx-auto">
+          <a
+            href="https://github.com/RobbyFachrezaPutra"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub
+              size={32}
+              className="text-stone-50 hover:text-stone-500 transition"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin
+              size={32}
+              className="text-cyan-400 hover:text-cyan-800 transition"
+            />
+          </a>
+          <a href="mailto:robbyfachrezaputra@gmail.com">
+            <FaEnvelope
+              size={32}
+              className="text-red-500 hover:text-red-700 transition"
+            />
+          </a>
         </div>
       </div>
     </section>

@@ -1,3 +1,7 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function Skills() {
   return (
     <section
@@ -15,20 +19,43 @@ export default function Skills() {
             membantu dalam pengembangan aplikasi yang efisien.
           </p>
           <ul className="pl-8 list-disc text-base sm:text-lg lg:text-xl justify-center text-zinc-300">
-            <li>
+            <motion.li
+              className="pb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
               <strong>Front-End:</strong> Next.js, React, TypeScript, Tailwind
               CSS
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              className="pb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+            >
               <strong>Back-End:</strong> Node.js, Express.js (pemahaman dasar)
-            </li>
-            <li>
+            </motion.li>
+            <motion.li
+              className="pb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               <strong>Database:</strong> MongoDB (pemahaman dasar)
-            </li>
-            <li>
-              <strong>Tools & DevOps:</strong> Git, GitHub, API Integration,
-              CI/CD (pemahaman dasar)
-            </li>
+            </motion.li>
+            <motion.li
+              className="pb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <strong>Tools & DevOps:</strong> Git, GitHub
+            </motion.li>
           </ul>
         </div>
       </div>

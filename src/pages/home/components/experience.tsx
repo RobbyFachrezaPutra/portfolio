@@ -42,12 +42,13 @@ export default function Experience() {
             <p className="text-sm text-stone-300">2024 - Sekarang</p>
             <p className="text-base lg:text-lg text-zinc-300">
               Berkontribusi dalam proyek open-source dan membagikan kode melalui
-              repository GitHub. Beberapa proyek dapat dilihat di
+              repository GitHub. Beberapa proyek dapat dilihat di{" "}
               <a
-                href="https://github.com/USERNAME"
-                className="text-blue-500 underline"
+                href="https://github.com/RobbyFachrezaPutra"
+                className="text-cyan-400 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                {" "}
                 GitHub
               </a>
               .

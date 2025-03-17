@@ -1,7 +1,7 @@
 export default function Testimonial() {
   return (
     <section
-      id="testimonialas"
+      id="testimonials"
       className="w-full px-4 md:px-8 lg:px-12 py-16 md:py-24"
     >
       <div className="container">
