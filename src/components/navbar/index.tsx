@@ -79,7 +79,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white/80 text-[#182541] text-center transition-all duration-300 absolute left-0 w-full top-full opacity-100 visible"
+            className="md:hidden bg-white/90 text-[#182541] text-center transition-all duration-300 absolute left-0 w-full top-full opacity-100 visible"
           >
             <a
               href="#home"

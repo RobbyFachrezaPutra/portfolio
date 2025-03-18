@@ -16,7 +16,7 @@ export default function Hero() {
             viewport={{ once: true }}
           >
             <h1 className="text-base font-semibold text-stone-50 mb-1 md:text-xl">
-              Hey, I'm{" "}
+              Hai, saya{" "}
               <span className="block font-bold text-3xl mt-1 lg:text-5xl">
                 Robby F. Putra
               </span>
@@ -25,7 +25,7 @@ export default function Hero() {
               Full Stack Web Developer
             </p>
             <p className="font-medium text-base text-zinc-300 mb-5">
-              Learning, Coding, and Creating Digital Experiences
+              Eksplorasi, inovasi, dan membangun pengalaman digital
             </p>
             <a href="#contact">
               <button className="px-4 py-2 sm:px-6 sm:py-3 text-cyan-900 text-sm sm:text-base border bg-cyan-400 rounded-xl hover:text-cyan-400 hover:bg-cyan-900 transform transition-all duration-300 ease-in-out hover:scale-105 sm:hover:scale-110 mt-5">
