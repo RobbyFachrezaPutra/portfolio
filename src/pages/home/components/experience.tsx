@@ -14,7 +14,7 @@ export default function Experience() {
             <h3 className="text-lg lg:text-xl font-semibold text-stone-50">
               Self-Learning & Personal Projects
             </h3>
-            <p className="text-sm text-stone-300">2024 - Sekarang</p>
+            <p className="text-sm text-stone-300">2025 - Sekarang</p>
             <p className="text-base lg:text-lg text-zinc-300">
               Mempelajari pengembangan web secara mandiri dengan fokus pada
               Next.js, TypeScript, dan Tailwind CSS. Mengembangkan proyek kecil
@@ -26,7 +26,7 @@ export default function Experience() {
             <h3 className="text-lg lg:text-xl font-semibold text-stone-50">
               Code Challenges & Mini Projects
             </h3>
-            <p className="text-sm text-stone-300">2024 - Sekarang</p>
+            <p className="text-sm text-stone-300">2025 - Sekarang</p>
             <p className="text-base lg:text-lg text-zinc-300">
               Mengerjakan berbagai tantangan coding untuk memperdalam pemahaman
               dalam React, JavaScript, dan fundamental back-end dengan Node.js.
@@ -39,7 +39,7 @@ export default function Experience() {
             <h3 className="text-lg lg:text-xl font-semibold text-stone-50">
               Open Source & GitHub Contributions
             </h3>
-            <p className="text-sm text-stone-300">2024 - Sekarang</p>
+            <p className="text-sm text-stone-300">2025 - Sekarang</p>
             <p className="text-base lg:text-lg text-zinc-300">
               Berkontribusi dalam proyek open-source dan membagikan kode melalui
               repository GitHub. Beberapa proyek dapat dilihat di{" "}
